@@ -35,3 +35,14 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+Credits:
+- desert image: Photo by Ken Cheung from Pexels
+- beach image: https://www.pexels.com/photo/seashore-near-body-of-water-417083/
+- forest image: Photo by Aleksey Kuprikov from Pexels
+- modern image: Photo by 李进 from Pexels
+- gothic image: Photo by 樊森 from Pexels
+- art deco image: Photo by Nextvoyage from Pexels
+- leslie image: https://cdn.vox-cdn.com/thumbor/bUSBms8wp1Spe_6Y5iDfMHk1H-k=/0x0:1200x798/1820x1213/filters:focal(440x289:632x481):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66498866/700466533.0.jpg
+- april image: https://screenqueens.files.wordpress.com/2015/03/tumblr_my4j1vm0o41rdh9azo1_1280.png
+- ron image: https://upload.wikimedia.org/wikipedia/en/a/ae/RonSwanson.jpg
