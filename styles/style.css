@@ -97,3 +97,7 @@ footer {
 .cityAspect {
     /* flex-direction: row; */
 }
+
+img {
+    height: 200px;
+}
