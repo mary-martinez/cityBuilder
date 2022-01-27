@@ -9,6 +9,7 @@ const mayorEl = document.getElementById('mayor-image');
 const sloganButton = document.getElementById('slogan-button');
 const sloganInput = document.getElementById('slogan-input');
 const sloganEl = document.getElementById('slogan-location');
+const resultsEl = document.getElementById('results');
 
 // let state
 let climateCounter = 0;
@@ -22,5 +23,13 @@ let slogans =[''];
   // update DOM to reflect the new state
 
 climateDropdown.addEventListener('change', (e) => {
+  //get value selected by user
   const value = e.target.value;
+  console.log(value);
+  // increment climate counter
+  climateCounter++;
+
+  // update image
+  climateEl.src = `./assets/${value}.jpg`;
+  resultsEl.textContent = createCountString('climate', climateCounter);
 })
