@@ -6,13 +6,25 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+HTML
+1) Make divs for selection, displaying images, slogan input, displaying stats, and displaying slogans
+2) create dropdown selection options
+3) make headings for each dropdown option
+
+JS
+1) Create createCountString(type, count) test in tests.js 
+2) Import
+3) grab DOM elements with getElementById()
+4) let state of counters and arrays
+5) add event listeners for the dropdowns
+6) function to createCountString
+7) function to displayStats
+8) event listener for slogans
+9) function to display slogans 
+
+CSS
+1) layout for the various HTML elements
+2) additional styling as needed
 
 Additional considerations:
 - Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
