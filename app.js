@@ -72,9 +72,9 @@ sloganButton.addEventListener('click', () => {
     slogans.push(sloganInput.value);
     sloganInput.value = '';
     displaySlogans();
-})
+});
 
-function displayStats(type, count) {
+function displayStats() {
     resultsClimateEl.textContent = createCountString('climate', climateCounter);
     resultsArchEl.textContent = createCountString('architecture', archCounter);
     resultsMayorEl.textContent = createCountString('Mayor', mayorCounter);
