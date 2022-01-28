@@ -20,40 +20,46 @@
     </header>
     <main>
             <h2>
-                Welcome to Chrome City!<br/>
-                As a leading city planner, we need your help designing Chrome City.
+                Welcome to Chrome City!
             </h2>
-            <section class="main-section">
+            <h3>
+                As a leading city planner, we need your help designing Chrome City.
+            </h3>    
+                
+            
+        <section class="main-section">
           
             
             <div class='cityAspect' id='climate'>
                 <label class='labels'>Climate</label>
-                <select id='climate-dropdown'>
+                <select class='dropdown' id='climate-dropdown'>
                     <option value='beach'>Beach</option>
                     <option value='desert'>Desert</option>
                     <option value='forest'>Forest</option>
                 </select>
-                <img id='climate-image' src="./assets/beach.jpg"></img>
+                <img class='images' id='climate-image' src="./assets/beach.jpg"></img>
             </div>
             
             <div class='cityAspect' id='arch'>
                 <label class='labels'>Architecture</label>
-                <select id='arch-dropdown'>
+                <select class='dropdown' id='arch-dropdown'>
                     <option value='modern'>Modern</option>
                     <option value='gothic'>Gothic</option>
                     <option value='artdeco'>Art Deco</option>
                 </select>
-                <img id='arch-image' src="./assets/modern.jpg"></img>
+                <img class='images' id='arch-image' src="./assets/modern.jpg"></img>
             </div>
             <div class='cityAspect' id='mayor'>
                 <label class='labels'>Mayor</label>
-                <select id='mayor-dropdown'>
+                <select class='dropdown' id='mayor-dropdown'>
                     <option value='leslie'>Leslie</option>
                     <option value='april'>April</option>
                     <option value='ron'>Ron</option>
                 </select>
-                <img id='mayor-image' src="./assets/leslie.jpg"></img>
+                <img class='images' id='mayor-image' src="./assets/leslie.jpg"></img>
             </div>
+        </section>
+        <section id='display-results'>
             <p id='resultsClimate'></p>
             <p id='resultsArch'></p>
             <p id='resultsMayor'></p>
