@@ -10,17 +10,20 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500;600&family=Lato&family=Space+Mono&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
+            <img class='logo' src="./assets/big-logo.png" />
         </div>
     </header>
     <main>
-            <h2>
-                Welcome to Chrome City!
+            <h2 class='underlined'>
+                Welcome to Pawnee, Oregon!
             </h2>
             <h3>
                 As a leading city planner, we need your help designing Chrome City.
@@ -30,34 +33,41 @@
         <section class="main-section">
           
             
-            <div class='cityAspect' id='climate'>
-                <label class='labels'>Climate</label>
-                <select class='dropdown' id='climate-dropdown'>
-                    <option value='beach'>Beach</option>
-                    <option value='desert'>Desert</option>
-                    <option value='forest'>Forest</option>
-                </select>
+            <article class='cityAspect' id='climate'>
+                <div class='separator'>
+                    <label class='labels'>Climate</label>
+                    <select class='dropdown' id='climate-dropdown'>
+                        <option value='beach'>Beach</option>
+                        <option value='desert'>Desert</option>
+                        <option value='forest'>Forest</option>
+                    </select>
+                </div>
                 <img class='images' id='climate-image' src="./assets/beach.jpg"></img>
-            </div>
+            </article>
             
-            <div class='cityAspect' id='arch'>
-                <label class='labels'>Architecture</label>
-                <select class='dropdown' id='arch-dropdown'>
-                    <option value='modern'>Modern</option>
-                    <option value='gothic'>Gothic</option>
-                    <option value='artdeco'>Art Deco</option>
-                </select>
+            <article class='cityAspect' id='arch'>
+                <div class='separator'>
+                    <label class='labels'>Architecture</label>
+                    <select class='dropdown' id='arch-dropdown'>
+                        <option value='modern'>Modern</option>
+                        <option value='gothic'>Gothic</option>
+                        <option value='artdeco'>Art Deco</option>
+                    </select>
+            </div>
                 <img class='images' id='arch-image' src="./assets/modern.jpg"></img>
-            </div>
-            <div class='cityAspect' id='mayor'>
-                <label class='labels'>Mayor</label>
-                <select class='dropdown' id='mayor-dropdown'>
-                    <option value='leslie'>Leslie</option>
-                    <option value='april'>April</option>
-                    <option value='ron'>Ron</option>
-                </select>
+            </article>
+
+            <article class='cityAspect' id='mayor'>
+                <div class='separator'>
+                    <label class='labels'>Mayor</label>
+                    <select class='dropdown' id='mayor-dropdown'>
+                        <option value='leslie'>Leslie</option>
+                        <option value='april'>April</option>
+                        <option value='ron'>Ron</option>
+                    </select>
+                </div>
                 <img class='images' id='mayor-image' src="./assets/leslie.jpg"></img>
-            </div>
+            </article>
         </section>
         <section id='display-results'>
             <p id='resultsClimate'></p>
@@ -65,12 +75,12 @@
             <p id='resultsMayor'></p>
         </section>
         <section class='slogan'>
-            <label>
-                What should our slogan be?
+            <label class='slogan-label'>What should our slogan be?</label>
+            <article class='slogan-section'>
                 <input id='slogan-input' />
                 <button id='slogan-button'>Add</button>
-                <div id='slogan-location'></div>
-            </label>
+            </article>
+            <div id='slogan-location'></div>
         </section>
     </main>
     <footer>
