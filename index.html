@@ -10,61 +10,81 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500;600&family=Lato&family=Space+Mono&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
+            <img class='logo' src="./assets/big-logo.png" />
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
+            <h2 class='underlined'>
+                Welcome to Pawnee, Oregon!
             </h2>
+            <h3>
+                As a leading city planner, we need your help designing Chrome City.
+            </h3>    
+                
+            
+        <section class="main-section">
+          
+            
+            <article class='cityAspect' id='climate'>
+                <div class='separator'>
+                    <label class='labels'>Climate</label>
+                    <select class='dropdown' id='climate-dropdown'>
+                        <option value='beach'>Beach</option>
+                        <option value='desert'>Desert</option>
+                        <option value='forest'>Forest</option>
+                    </select>
+                </div>
+                <img class='images' id='climate-image' src="./assets/beach.jpg"></img>
+            </article>
+            
+            <article class='cityAspect' id='arch'>
+                <div class='separator'>
+                    <label class='labels'>Architecture</label>
+                    <select class='dropdown' id='arch-dropdown'>
+                        <option value='modern'>Modern</option>
+                        <option value='gothic'>Gothic</option>
+                        <option value='artdeco'>Art Deco</option>
+                    </select>
+            </div>
+                <img class='images' id='arch-image' src="./assets/modern.jpg"></img>
+            </article>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <article class='cityAspect' id='mayor'>
+                <div class='separator'>
+                    <label class='labels'>Mayor</label>
+                    <select class='dropdown' id='mayor-dropdown'>
+                        <option value='leslie'>Leslie</option>
+                        <option value='april'>April</option>
+                        <option value='ron'>Ron</option>
+                    </select>
+                </div>
+                <img class='images' id='mayor-image' src="./assets/leslie.jpg"></img>
+            </article>
+        </section>
+        <section id='display-results'>
+            <p id='resultsClimate'></p>
+            <p id='resultsArch'></p>
+            <p id='resultsMayor'></p>
+        </section>
+        <section class='slogan'>
+            <label class='slogan-label'>What should our slogan be?</label>
+            <article class='slogan-section'>
+                <input id='slogan-input' />
+                <button id='slogan-button'>Add</button>
+            </article>
+            <div id='slogan-location'></div>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>

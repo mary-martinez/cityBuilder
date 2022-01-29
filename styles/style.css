@@ -2,19 +2,21 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
+    /* --color1: white;
     --color2: white;
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: white; */
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    --color1: hsla(335, 86%, 3%, 1);
+    --color2: hsla(222, 15%, 87%, 1);
+    --color3: hsla(211, 29%, 32%, 1);
+    --color4: hsla(188, 36%, 76%, 1);
+    --color5: hsla(28, 100%, 76%, 1);
+    --color6: hsla(211, 29%, 32%, 0.5);
+    --color7: hsla(335, 86%, 3%, 0.5);
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -25,7 +27,10 @@ body {
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
+    --gutter2: 5px;
+    --gutter3: 10px;
     --footer-height: 25px;
+    --footer-height2: 75px;
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
@@ -36,21 +41,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    margin-bottom: var(--footer-height2);
 }
 
 section {
-    background-color: var(--color5);
-    max-width: 80%;
+    /* background-color: var(--color5); */
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    padding-top: var(--gutter2);
+    padding-bottom: var(--gutter2);
+    margin-top: var(--gutter2);
+    margin-bottom: var(--gutter3);
+    /* border: solid 2px var(--color1); */
 }
 
 header {
@@ -63,8 +68,16 @@ header {
 
 
 h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    font-family: 'Anton','Titillium Web', sans-serif;
+    margin-bottom: var(--gutter2);
+    text-shadow: 2px 2px 2px var(--color2);
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin: var(--gutter2);
 }
 
 .gutter-right {
@@ -76,16 +89,123 @@ header img {
 }
 
 p {
-    margin: var(--gutter);
+    margin: var(--gutter2);
+    font-size: 1.4rem;
 }
   
 footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: var(--footer-height);
+    height: 2*var(--footer-height);
     display: flex;
     justify-content: flex-end;
+    padding: var(--gutter3);
+    margin-top: var(--footer-height2);
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--gutter2);
+    width: 120%; 
+    /* overflow-x: scroll; */
+    margin: var(--gutter2);
+}
+
+
+.images {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 5px white solid;
+    border-radius: 0px 0px 6px 6px;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 5px 5px 6px hsla(335, 86%, 3%, .7); 
+}
+
+.cityAspect {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: var(--gutter3);
+}
+
+.labels {
+    align-self: center;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px var(--color2);
+    /* margin-bottom: var(--gutter2); */
+    /* text-decoration: underline; */
+}
+
+.dropdown {
+    width: 100px;
+    align-self: center;
+    margin-bottom: 5px;
+    border: 1px black solid;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    align-items: center;
+    box-shadow: 3px 3px 6px hsla(335, 86%, 3%, .7);
+}
+
+.slogan {
+    /* font-size: 1.5rem; */
+    justify-content: center;
+    background-color: var(--color6);
+    width: 50%;
+    padding: var(--gutter);
+    margin-bottom: var(--footer-height2);
+}
+
+
+
+.slogan-label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--color7);
+}
+
+input, 
+button {
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 6px hsla(335, 86%, 3%, .7);
+}
+
+.slogan-section {
+    justify-content: center;
+    justify-items: center;
+}
+
+#slogan-location {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-overflow: wrap;
+    font-size: 1.3rem;
+    width: 90%;
+    
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.separator {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    align-self: stretch;
+    /* margin: 10px; */
+    background-color: var(--color6);
+    /* padding: var(--gutter2); */
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 5px 5px 6px hsla(335, 86%, 3%, .7); 
 }
